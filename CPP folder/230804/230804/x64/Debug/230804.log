@@ -1,0 +1,18 @@
+﻿  main.c
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(39,2): warning C4013: 'InputNumberInRange'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(40,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int (__cdecl *)()'입니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(40,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) int (__cdecl *)()' 형식의 인수 1과(와) 충돌합니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(50,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(50,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) int *' 형식의 인수 1과(와) 충돌합니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(51,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(51,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) int *' 형식의 인수 1과(와) 충돌합니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(56,16): warning C4028: 정식 매개 변수 1이(가) 선언과 다릅니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(56,24): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(60,7): warning C4047: '=': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(63,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(63,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) int *' 형식의 인수 1과(와) 충돌합니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(64,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(64,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) int *' 형식의 인수 1과(와) 충돌합니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(58,6): warning C4047: '초기화 중': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+C:\Users\sbs12\Desktop\김희석\230804\230804\main.c(102): warning C4715: 'InputNumberInRange': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  230804.vcxproj -> C:\Users\sbs12\Desktop\김희석\230804\x64\Debug\230804.exe

@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\sbs12\Desktop\김희석\230808\230808\main.c(41,1): error C2059: 구문 오류: '/'
+C:\Users\sbs12\Desktop\김희석\230808\230808\main.c(117,15): warning C4013: 'GetArrayLength'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\sbs12\Desktop\김희석\230808\230808\main.c(122,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+C:\Users\sbs12\Desktop\김희석\230808\230808\main.c(122,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.

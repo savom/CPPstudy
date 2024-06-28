@@ -1,0 +1,6 @@
+﻿  Human.cpp
+C:\Users\Administrator\Desktop\khs\231028_C\231028_C\231028_C\Human.cpp(11,31): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Main.cpp
+  Student.cpp
+  코드를 생성하고 있습니다...
+  231028_C.vcxproj -> C:\Users\Administrator\Desktop\khs\231028_C\231028_C\x64\Debug\231028_C.exe

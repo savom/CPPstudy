@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\sbs12\Desktop\김희석\230811\230811\main.c(134,7): warning C4047: '초기화 중': 'int *'의 간접 참조 수준이 'int (*)[4]'과(와) 다릅니다.
+  230811.vcxproj -> C:\Users\sbs12\Desktop\김희석\230811\x64\Debug\230811.exe

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter1\\chapter1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter1\\chapter1\\1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter1\\chapter1\\01-2 rinux||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:01-2 rinux||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -23,11 +27,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "1.h",
+              "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter1\\chapter1\\1.h",
+              "RelativeDocumentMoniker": "1.h",
+              "ToolTip": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter1\\chapter1\\1.h",
+              "RelativeToolTip": "1.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-02T11:12:27.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "low_read.c",
               "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\low_read.c",
               "RelativeDocumentMoniker": "..\\..\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\low_read.c",
@@ -35,12 +52,11 @@
               "RelativeToolTip": "..\\..\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\low_read.c",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-07-02T10:36:17.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T10:36:17.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "fd_seri.c",
               "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\fd_seri.c",
               "RelativeDocumentMoniker": "..\\..\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\fd_seri.c",
@@ -48,12 +64,11 @@
               "RelativeToolTip": "..\\..\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\fd_seri.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-07-02T10:20:16.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T10:20:16.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "low_open.c",
               "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\low_open.c",
               "RelativeDocumentMoniker": "..\\..\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\low_open.c",
@@ -61,18 +76,17 @@
               "RelativeToolTip": "..\\..\\\uC608\uC81C\\Chapter1 \uC18C\uC2A4\uCF54\uB4DC\\low_open.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-07-02T10:19:47.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T10:19:47.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "01-2 rinux",
               "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter1\\chapter1\\01-2 rinux",
               "RelativeDocumentMoniker": "01-2 rinux",
               "ToolTip": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter1\\chapter1\\01-2 rinux",
               "RelativeToolTip": "01-2 rinux",
-              "ViewState": "AQIAAJwAAAAAAAAAAAAiwL4AAAADAAAA",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAiwLYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-07-02T10:11:35.277Z",
               "EditorCaption": ""

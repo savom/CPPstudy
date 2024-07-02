@@ -1,0 +1,47 @@
+윈도우 기반으로 구현하기
+
+상당수의 프로젝트에서는 서버를 리눅스 계열의 운영체제 기반으로 개발한다. 그러나 반대로 클라이언트 프로그램의 경우 윈도우 기반의 개발이 절대적이다.
+리눅스 기반으로 구현되어있는 서버 프로그램을 윈도우 기반으로 변경하거나, 윈도우 기반으로 구현되어 있는 서버 프로그램을 리눅스 기반으로 변경해야 하는 상황도 종종 발생한다.
+	-> 떄문에 소켓 프로그래밍에 대해서는 리눅스뿐만 아니라 윈도우에서도 개발이 가능하도록 공부해야한다.
+이 둘은 서로 매우 유사하기 때문에 묶어서 공부한다.
+
+윈도우 소켓을 위한 헤더와 라이브러리의 설정
+헤더파일 winsock2.h를 포함한다.
+ws2_32.lib 라이브러리를 링크시켜야 한다.
+
+윈속(윈도우 소켓)의 초기화
+
+#include <winsock2.h>
+
+int WSAStarup(WORD wVersionRequested, LPWSADATA lpWSAData);
+	-> 성공 시 0, 실패 시 0이 아닌 에러 코드 값 반환.
+	wVersionRequested : 프로그래머가 사용할 원속의 버전정보 전달.
+	lpWSAData : WSADATA라는 구조체 변수의 주소 값 전달.
+	
+	첫 번째 매개변수인 wVersionRequestd는 버전 정보는 2.2 가 있다면 주 버젼 2, 부 버젼 2 해서 2.2이며 0x0202형식으로 반환해야하는데
+	이렇듯 상위 8비트에는 부 버전 정보를, 하위 8비트에는 주 버전 정보를 표시해서 인자로 전달한다.
+	그런데 바이트 단위로 쪼개서 버전정보를 설정하는 것이 조금 번거롭게 느껴질 것이고, 그래서 매크로 함수인 MAKEWORD가 제공된다.
+	이 MAKEWORD 함수를 사용하면 WORD형 버전정보를 구성할 수 있다. ex) MAKEWORD(2, 2); -> 주 버젼 2, 부 버젼 2, 0x0202 반환
+
+	두 번째 매개변수인 lpWSAData는 WSADATA 구조체 변수의 주소 값을 인자로 전달해야 한다(LPWSADATA는 WSADATA의 포인터 형).
+	그러면 함수호출이 완료되고 난 다음에 해당 변수에는 초기화된 라이브러리의 정보가 채워진다.
+	함수호출을 위해서는 반드시 WSADATA 구조체 변수의 주소 값을 전달해야 한다.
+
+	** 예제 **
+	WSAStartup 함수의 호출과정
+	int main(int argc, char* argv[])
+	{
+		WSADATA wsaData;
+				(매크로 함수로 버전 기입)	(라이브러리 정보 전달 주소)
+		if (WSAStartup(MAKEWORD(2,2) , &wsaData) != 0)
+			ErrorHandling("WSAStartup() error!");
+
+		return 0;
+	}
+
+윈속 라이브러리 해제
+
+#include <winsock2.h>
+
+int WSACleanup(void);
+	-> 성공 시 0, 실패 시 socket_error 반환

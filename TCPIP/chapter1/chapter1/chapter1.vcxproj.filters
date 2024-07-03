@@ -21,5 +21,16 @@
     <ClCompile Include="hello_client.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="01-4 winsock func and example.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01-2 rinux">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="01-3 windows">
+      <Filter>소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

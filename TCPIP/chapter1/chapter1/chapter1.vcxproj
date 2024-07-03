@@ -129,8 +129,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="01-4 winsock func and example.c" />
     <ClCompile Include="hello_client.c" />
     <ClCompile Include="hello_server.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01-2 rinux" />
+    <None Include="01-3 windows" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

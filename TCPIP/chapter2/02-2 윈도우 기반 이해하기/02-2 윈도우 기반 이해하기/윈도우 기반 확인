@@ -1,0 +1,15 @@
+윈도우 운영체제의 socket 함수
+	
+	#include <winsock2.h>
+	
+	SOCKET socket(int af, int type, int protocol);
+		-> 성공 시 소켓 핸들, 실패 시 INVALID_SOCKET 반환
+
+	위 함수를 호출할 떄 전달하는 인자의 종류와 의미가 리눅스의 socket 함수와 완전히 동일하다
+	보다시피 반환형이 SOCKET인데, 이는 정수로 정수로 표현되는 소켓의 핸들 값을 저장하기 위해 정의된 자료형의 이름이다.
+	즉, 위 함수가 반환하는 값은 SOCKET형 변수를 선언해서 저장해야 한다.
+
+	SOCKET soc = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
+	if(soc==INVALID_SOCKET)
+		ErrorHandling(". . . ");
+	흐름은 tcp_server_win.c의 send 함수를 보고 tcp_client_win.c의 while문의 read를 보면 된다.

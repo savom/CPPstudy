@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F58C5C9-1E5F-41AA-9FF5-43FAE7FC1BE0}|02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\\uC708\uB3C4\uC6B0 \uAE30\uBC18 \uD655\uC778||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F58C5C9-1E5F-41AA-9FF5-43FAE7FC1BE0}|02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30.vcxproj|solutionrelative:02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\\uC708\uB3C4\uC6B0 \uAE30\uBC18 \uD655\uC778||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F58C5C9-1E5F-41AA-9FF5-43FAE7FC1BE0}|02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_server_win.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F58C5C9-1E5F-41AA-9FF5-43FAE7FC1BE0}|02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30.vcxproj|solutionrelative:02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_server_win.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F58C5C9-1E5F-41AA-9FF5-43FAE7FC1BE0}|02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_client_win.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F58C5C9-1E5F-41AA-9FF5-43FAE7FC1BE0}|02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30.vcxproj|solutionrelative:02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_client_win.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tcp_server_win.c",
+              "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_server_win.c",
+              "RelativeDocumentMoniker": "02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_server_win.c",
+              "ToolTip": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_server_win.c",
+              "RelativeToolTip": "02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_server_win.c",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-07-04T09:44:47.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tcp_client_win.c",
+              "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_client_win.c",
+              "RelativeDocumentMoniker": "02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_client_win.c",
+              "ToolTip": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_client_win.c",
+              "RelativeToolTip": "02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\tcp_client_win.c",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-07-04T09:44:31.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\uC708\uB3C4\uC6B0 \uAE30\uBC18 \uD655\uC778",
+              "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\\uC708\uB3C4\uC6B0 \uAE30\uBC18 \uD655\uC778",
+              "RelativeDocumentMoniker": "02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\\uC708\uB3C4\uC6B0 \uAE30\uBC18 \uD655\uC778",
+              "ToolTip": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter2\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\\uC708\uB3C4\uC6B0 \uAE30\uBC18 \uD655\uC778",
+              "RelativeToolTip": "02-2 \uC708\uB3C4\uC6B0 \uAE30\uBC18 \uC774\uD574\uD558\uAE30\\\uC708\uB3C4\uC6B0 \uAE30\uBC18 \uD655\uC778",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-04T09:38:12.131Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

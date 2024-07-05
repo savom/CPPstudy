@@ -18,5 +18,8 @@
     <ClCompile Include="03-1 IP주소와 port번호">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="03-2 ~ 4">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

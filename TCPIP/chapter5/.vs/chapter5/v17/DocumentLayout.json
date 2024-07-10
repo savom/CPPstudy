@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C6CDE64-6AA9-4DD6-B210-599C9E502898}|\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!\\\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter5\\\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!\\\uC5D0\uCF54\uD074\uB77C\uC774\uC5B8\uD2B8 \uAD6C\uD604||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5C6CDE64-6AA9-4DD6-B210-599C9E502898}|\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!\\\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!.vcxproj|solutionrelative:\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!\\\uC5D0\uCF54\uD074\uB77C\uC774\uC5B8\uD2B8 \uAD6C\uD604||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\uC5D0\uCF54\uD074\uB77C\uC774\uC5B8\uD2B8 \uAD6C\uD604",
+              "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter5\\\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!\\\uC5D0\uCF54\uD074\uB77C\uC774\uC5B8\uD2B8 \uAD6C\uD604",
+              "RelativeDocumentMoniker": "\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!\\\uC5D0\uCF54\uD074\uB77C\uC774\uC5B8\uD2B8 \uAD6C\uD604",
+              "ToolTip": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter5\\\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!\\\uC5D0\uCF54\uD074\uB77C\uC774\uC5B8\uD2B8 \uAD6C\uD604",
+              "RelativeToolTip": "\uC5D0\uCF54 \uD074\uB77C\uC774\uC5B8\uD2B8 \uC644\uBCBD \uAD6C\uD604!\\\uC5D0\uCF54\uD074\uB77C\uC774\uC5B8\uD2B8 \uAD6C\uD604",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwB8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-10T07:59:55.889Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

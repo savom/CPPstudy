@@ -1,0 +1,24 @@
+﻿  echo_client.c
+C:\Users\gmltjr\Documents\GitHub\CPP-and-TCP-IP-study\TCPIP\예제\Chapter4 소스코드\echo_client.c(33,26): warning C4013: 'inet_pton'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\gmltjr\Documents\GitHub\CPP-and-TCP-IP-study\TCPIP\예제\Chapter4 소스코드\echo_client.c(49,26): warning C4267: '함수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+echo_server.obj : error LNK2005: error_handling이(가) echo_client.obj에 이미 정의되어 있습니다.
+echo_server.obj : error LNK2005: main이(가) echo_client.obj에 이미 정의되어 있습니다.
+echo_client.obj : error LNK2019: __imp_closesocketmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp_closesocket
+echo_client.obj : error LNK2019: __imp_connectmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_client.obj : error LNK2019: __imp_htonsmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp_htons
+echo_client.obj : error LNK2019: __imp_recvmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp_recv
+echo_client.obj : error LNK2019: __imp_sendmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp_send
+echo_client.obj : error LNK2019: __imp_socketmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp_socket
+echo_client.obj : error LNK2019: __imp_WSAStartupmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2001: 확인할 수 없는 외부 기호 __imp_WSAStartup
+echo_client.obj : error LNK2019: inet_ptonmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2019: __imp_acceptmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2019: __imp_bindmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2019: __imp_htonlmain 함수에서 참조되는 확인할 수 없는 외부 기호
+echo_server.obj : error LNK2019: __imp_listenmain 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\gmltjr\Documents\GitHub\CPP-and-TCP-IP-study\TCPIP\chapter4\x64\Debug\TCP기반 서버 클라이언트1.exe : fatal error LNK1120: 12개의 확인할 수 없는 외부 참조입니다.

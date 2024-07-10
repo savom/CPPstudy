@@ -1,35 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
-#include <arpa/inet.h>
-#include <sys/socket.h>
+#include <WinSock2.h>
 
 #define BUF_SIZE 1024
 void error_handling(char *message);
 
 int main(int argc, char *argv[])
 {
-	int sock;
+	WSADATA wsaData;
+	SOCKET hSocket;
 	char message[BUF_SIZE];
-	int str_len;
-	struct sockaddr_in serv_adr;
+	int strLen;
+	SOCKADDR_IN servAdr;
+
 
 	if(argc!=3) {
 		printf("Usage : %s <IP> <port>\n", argv[0]);
 		exit(1);
 	}
-	
-	sock=socket(PF_INET, SOCK_STREAM, 0);   
-	if(sock==-1)
+
+	if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0)
+		error_handling("WSAStartup() error");
+		
+
+	hSocket=socket(PF_INET, SOCK_STREAM, 0);   
+	if(hSocket==INVALID_SOCKET)
 		error_handling("socket() error");
 	
-	memset(&serv_adr, 0, sizeof(serv_adr));
-	serv_adr.sin_family=AF_INET;
-	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
-	serv_adr.sin_port=htons(atoi(argv[2]));
+	memset(&servAdr, 0, sizeof(servAdr));
+	servAdr.sin_family=AF_INET;
+	servAdr.sin_addr.s_addr=inet_pton(argv[1]);
+	servAdr.sin_port=htons(atoi(argv[2]));
 	
-	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+	if(connect(hSocket, (SOCKADDR*)&servAdr, sizeof(servAdr))==SOCKET_ERROR)
 		error_handling("connect() error!");
 	else
 		puts("Connected...........");
@@ -42,13 +46,13 @@ int main(int argc, char *argv[])
 		if(!strcmp(message,"q\n") || !strcmp(message,"Q\n"))
 			break;
 
-		write(sock, message, strlen(message));
-		str_len=read(sock, message, BUF_SIZE-1);
-		message[str_len]=0;
+		send(hSocket, message, strlen(message), 0);
+		strLen = recv(hSocket, message, BUF_SIZE - 1, 0);
+		message[strLen]=0;
 		printf("Message from server: %s", message);
 	}
 	
-	close(sock);
+	closesocket(hSocket);
 	return 0;
 }
 

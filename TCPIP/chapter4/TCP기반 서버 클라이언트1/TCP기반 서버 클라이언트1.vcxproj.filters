@@ -15,26 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TCP와 UDP에 대한 이해">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="TCP기반 서버, 클라이언트 구현">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="lterative 기반의 서버, 클라이언트 구현">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\예제\Chapter4 소스코드\echo_client.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\예제\Chapter4 소스코드\echo_client_win.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="..\..\예제\Chapter4 소스코드\echo_server.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\예제\Chapter4 소스코드\echo_server_win.c">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lterative 기반의 서버, 클라이언트 구현">
       <Filter>소스 파일</Filter>
-    </ClCompile>
+    </None>
+    <None Include="TCP기반 서버, 클라이언트 구현">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="TCP와 UDP에 대한 이해">
+      <Filter>소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

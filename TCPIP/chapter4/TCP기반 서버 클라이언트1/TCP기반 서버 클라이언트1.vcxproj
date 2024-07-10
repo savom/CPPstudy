@@ -128,12 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\예제\Chapter4 소스코드\echo_client.c" />
-    <ClCompile Include="..\..\예제\Chapter4 소스코드\echo_client_win.c" />
     <ClCompile Include="..\..\예제\Chapter4 소스코드\echo_server.c" />
-    <ClCompile Include="..\..\예제\Chapter4 소스코드\echo_server_win.c" />
-    <ClCompile Include="lterative 기반의 서버, 클라이언트 구현" />
-    <ClCompile Include="TCP기반 서버, 클라이언트 구현" />
-    <ClCompile Include="TCP와 UDP에 대한 이해" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lterative 기반의 서버, 클라이언트 구현" />
+    <None Include="TCP기반 서버, 클라이언트 구현" />
+    <None Include="TCP와 UDP에 대한 이해" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

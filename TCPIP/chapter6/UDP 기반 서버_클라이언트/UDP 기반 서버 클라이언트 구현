@@ -1,0 +1,84 @@
+UDP에서의 서버와 클라이언트는 연결되어 있지 않다.
+	
+	UDP 서버, 클라이언트는 TCP와 같이 연결된 상태로 데이터를 송수신하지 않는다.
+	때문에 TCP와 달리 연결 설정의 과정이 필요없다.
+	따라서 TCP 서버 구현과정에서 거쳤던 listen 함수와 accept 함수의 호출은 불필요하다.
+
+UDP에서는 서버컨 클라이언트건 하나의 소켓만 있다.
+	
+	TCP는 1:1연결을 필요로 하지만 UDP는 연결의 개념이 존재하지 않는다.
+	따라서 서버소켓과 클라이언트 소켓의 구분이 없다.
+	연결의 개념이 존재하지 않으므로, 하나의 소켓으로 둘 이상의 영역과 데이터 송수신이 가능하다.
+
+UDP 기반의 데이터 입출력 함수
+	
+	#include <sys/socket.h>
+	ssize_t sendto(int sock, void *buff, size_t nbytes, int flags, struct sockaddr *to, socklen_t addrlen);
+		-> 성공 시 전송된 바이트 수, 실패시 -1 반환
+		- sock : 데이터 전송에 사용될 UDP 소켓의 파일 디스크립터를 인자로 전달.
+		- buff : 전송할 데이터를 저장하고 있는 버퍼의 주소 값 전달.
+		- nbytes : 전송할 데이터 크기를 바이트 단위로 전달.
+		- flags 옵션 지정에 사용되는 매개변수, 지정할 옵션이 없다면 0 전달.
+		- to 목적지 주소정보를 담고 있는 sockaddr 구조체 변수의 주소 값 전달.
+		- addrlen 매개변수 to로 전달된 주소 값의 구조체 변수 크기 전달.
+
+	UDP 소켓은 연결의 개념이 있지 않으므로, 데이터를 전송할 때마다 목적지에 대한 정보를 전달해야 한다.
+
+	ssize_t recvfrom(int sock, void *buff, size_t nbytes, int flags, struct sockaddr *from, socklen_t *addrlen);
+		-> 성공 시 수신한 바이트 수, 실패 시 -1 반환.
+		- sock : 데이터 수신에 사용될 UDP 소켓의 파일 디스크립터를 인자로 전달.
+		- buff : 데이터 수신에 사용될 버퍼의 주소 값 전달.
+		- nbytes : 수신할 최대 바이트 수 전달, 떄문에 매개변수 buff가 가리키는 버퍼의 크기를 넘을 수 없다.
+		- flags : 옵션 지정에 사용되는 매개변수, 지정할 옵션이 없다면 0 전달.
+		- from : 발신지 정보를 채워 넣을 sockaddr 구조체 변수의 주소 값 전달.
+		- addrlen : 매개변수 from으로 전달된 주소에 해당하는 구조체 변수의 크기정보를 담고 있는 변수의 주소 값 전달.
+	UDP 소켓은 연결의 개념이 있지 않으므로, 데이터의 전송지가 둘 이상 될 수 있다.
+	따라서 데이터 수신 후 전송지가 어디인지 확인할 필요가 있다.
+
+UDP 기반의 에코 서버와 클라이언트
+
+	if (bind(serv_sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr)) == -1)
+	error_handling("bind() error");
+
+		while (1)
+		{
+			clnt_adr_sz = sizeof(clnt_adr);
+			str_len = recvfrom(serv_sock, message, BUF_SIZE, 0,
+				(struct sockaddr*)&clnt_adr, &clnt_adr_sz);
+			sendto(serv_sock, message, str_len, 0,
+				(struct sockaddr*)&clnt_adr, clnt_adr_sz);
+		}
+
+			UDP 에코 서버 코드에서 수신한 데이터의 전송지 정보를 참조하여 데이터를 에코한다.
+
+	while (1)
+	{
+		fputs("Insert message(q to quit): ", stdout);
+		fgets(message, sizeof(message), stdin);
+		if (!strcmp(message, "q\n") || !strcmp(message, "Q\n"))
+			break;
+
+		sendto(sock, message, strlen(message), 0,
+			(struct sockaddr*)&serv_adr, sizeof(serv_adr));
+		adr_sz = sizeof(from_adr);
+		str_len = recvfrom(sock, message, BUF_SIZE, 0,
+			(struct sockaddr*)&from_adr, &adr_sz);
+
+		message[str_len] = 0;
+		printf("Message from server: %s", message);
+	}
+
+			UDP는 데이터의 경계가 존재하기 때문에 한번의 recvfrom 함수 호출을 통해서 하나의 메시지를 완전히 읽어들인다.
+			그리고 sendto함수 호출시 IP와 PORT 번호가 자동으로 할당되기 때문에 일반적으로 UDP클라이언트 프로그램에서는 주소정보를 할당하는 별도의 과정이 불필요하다.
+
+UDP 클라이언트 소켓의 주소정보 할당
+	
+	UDP 프로그램에서는 데이터를 전송하는 sendto 함수호출 이전에 해당 소켓에 주소정보가 할당되어 있어야한다.
+	따라서 sendto 함수호출 이전에 bind 함수를 호출해서 주소정보를 할당해야 한다.
+	물론 bind 함수는 TCP 프로그램의 구현에서 호출되었던 함수이다.
+	그러나 이 함수는 TCP와 UDP를 가리지 않으므로 UDP 프로그램에서도 호출이 가능하다.
+	만약에 sendto 함수호출 시까지 주소정보가 할당되지 않았다면, sendto 함수가 처음 호출되는 싲머에서 해당 소켓에 IP와 PORT번호가 자동으로 할당된다.
+
+	이렇기 때문에 sendto 함수호출 시 IP와 PORT번호가 자동으로 할당되기 때문에 일반적으로 UDP의 클라이언트 프로그램에서는 주소정보를 할달하는 별도의 과정이 없다.
+
+

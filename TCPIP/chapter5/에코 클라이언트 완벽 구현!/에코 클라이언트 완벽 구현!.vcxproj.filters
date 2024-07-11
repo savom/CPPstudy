@@ -18,5 +18,8 @@
     <ClCompile Include="에코클라이언트 구현">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="tcp의 이론적인 이야기">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

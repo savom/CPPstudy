@@ -134,7 +134,7 @@
     <ClCompile Include="..\..\예제\Chapter6 소스코드\uecho_server.c" />
     <ClCompile Include="UDP 기반 서버 클라이언트 구현" />
     <ClCompile Include="UDP에 대한 이해" />
-    <ClCompile Include="UDP의 데이터 송수신 특성과 connect 함수호출.cpp" />
+    <ClCompile Include="UDP의 데이터 송수신 특성과 connect 함수호출" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

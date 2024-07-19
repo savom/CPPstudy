@@ -1,0 +1,41 @@
+프로그램상에서 도메인 이름을 쓸 필요가 있는가?
+	IP주소와 도메인 이름 사이의 변환함수가 필요한 이유는 프로그램이 실행될 때마다 도메인 이름을 근거로 IP주소를 얻어온 다음에 서버를 접속하게 되면
+	서버의 IP주소로부터 클라이언트 프로그램은 자유로울 수 있다.
+
+도메인 이름을 이용해서 IP주소 얻어오기
+	#include <netdb.h>
+	
+	struct hestent * gethostbyname(const char * hostname);
+		-> 성공 시 hostent 구초체 변수의 주소 값, 실패 시 NULL 포인터 반환
+		gethostbyname 함수의 인자로 도메인 이름 정보를 전달하면,
+		해당 도메인의 서버 정보가 hostent 구조체 변수에 채워지고, 그 변수의 주소 값이 반환된다.
+		
+	struct hostent
+	{
+		char * h_name;		 // official name
+		char ** h_aliases;   // alias list
+		int h_addrtype;		 // host address type
+		int h_length;		 // address length
+		char ** h_addr_list; // address list
+	}
+
+	IP는 도메인 이름에 비해 상대적으로 변동이 심하다. 때문에 프로그램 코드 상에서 서버의 IP를 직접 코드를 입력한다면,
+	서버의 IP가 변경될 때마다 컴파일을 다시 해야하는 번거로운 상황이 발생한다.
+	그러나 상대적으로 변동이 덜한 도메인 이름을 이용해서 구현된다면, 서버의 코드를 재 컴파일 할 필요가 없다.
+
+	h_name 공식 도메인 이름
+	h_aliases 별칭의 도메인 이름
+	h_addrtype 반환된 IP의 정보가 IPv4인 경우, AF_INET이 반환
+	h_length 반환된 IP주소의 크기정보가 담긴다. IPv4의 경우 4바이트, IPv6의 경우에는 16바이트
+	h_addr_list IP의 주소정보. 둘 이상의 경우 모두 반환.
+	
+	h_addr_list가 가리키는 것은 문자열 포인터 배열이다. 그러나 문자열 포인터 배열이 실제 가리키는 것은 문자열의 주소 값이 아닌 in_addr 구조체 변수의 주소 값이다.
+
+IP주소를 이용해서 도메인 정보 얻어오기
+	#include <netdb.h>
+
+	struct hostent* gethostbyaddr(const char* addr, socklent_t, int family);
+		-> 성공 시 hostent 구조체 변수의 주소 값, 실패 시 NULL 포인터 반환
+		- addr IP주소를 지니는 in_addr 구조체 변수의 포인터 전달, IPv4 이외의 다양한 정보를 전달받을 수 있도록 일반화하기 위해서 매개변수를 char형 포인터로 선언
+		- len 첫 번째 인자로 전달된 주소정보의 길이, IPv4의 경우 4 , IPv6의 경우 16 전달
+		- family 주소체계 정보 전달. IPv4의 경우 AF_INET, IPv6의 경우 AF_INET6 전달

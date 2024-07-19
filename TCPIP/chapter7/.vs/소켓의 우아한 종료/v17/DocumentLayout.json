@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A0282810-EE0A-41B6-8982-DB8F910E3E48}|chapter7\\chapter7.vcxproj|C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter7\\chapter7\\TCP \uAE30\uBC18\uC758 half-close||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A0282810-EE0A-41B6-8982-DB8F910E3E48}|chapter7\\chapter7.vcxproj|solutionrelative:chapter7\\TCP \uAE30\uBC18\uC758 half-close||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TCP \uAE30\uBC18\uC758 half-close",
+              "DocumentMoniker": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter7\\chapter7\\TCP \uAE30\uBC18\uC758 half-close",
+              "RelativeDocumentMoniker": "chapter7\\TCP \uAE30\uBC18\uC758 half-close",
+              "ToolTip": "C:\\Users\\gmltjr\\Documents\\GitHub\\CPP-and-TCP-IP-study\\TCPIP\\chapter7\\chapter7\\TCP \uAE30\uBC18\uC758 half-close",
+              "RelativeToolTip": "chapter7\\TCP \uAE30\uBC18\uC758 half-close",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T10:00:15.518Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
